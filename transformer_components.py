@@ -54,7 +54,8 @@ class MultiHeadAttention(nn.Module):
         energy = torch.einsum('bhqd, bhkd -> bhqk', q, k) # batch, num_heads, query_len, key_len
         if mask is not None:
             fill_value = torch.finfo(torch.float32).min
-            energy.mask_fill(~mask, fill_value)
+            mask = mask.expand(1, 1, -1, -1).permute(2, 0, 1, 3).repeat(1, energy.shape[1], energy.shape[2], 1) # gets mask into correct shape
+            energy.masked_fill(~mask, fill_value)
         
         scaling = self.hidden_size**(1/2)
         attn = F.softmax(energy, dim=-1) / scaling
@@ -67,42 +68,48 @@ class MultiHeadAttention(nn.Module):
         return out
 
 
-class ResBlock(nn.Module):
-    def __init__(self, fn):
-        super().__init__()
-        self.fn = fn
+class ViTBlock(nn.Module):
+    def __init__(self, hidden_size=768, attn_dropout_p=0, forward_expansion=1, mlp_drop_p=0, **kwargs):
+        super(ViTBlock, self).__init__()
+        self.hidden_size = hidden_size
         
-    def forward(self, x, **kwargs):
-        res = x
-        x = self.fn(x, **kwargs)
-        x += res
+        # Residual block #1
+        self.ln1 = nn.LayerNorm(hidden_size)
+        self.multi_head_attn = MultiHeadAttention(hidden_size, **kwargs)
+        self.drop1 = nn.Dropout(attn_dropout_p)
+        
+        # Residual block #2
+        self.ln2 = nn.LayerNorm(hidden_size)
+        self.mlp = MLP(hidden_size, forward_expansion * hidden_size, dropout=mlp_drop_p)
+        self.drop2 = nn.Dropout(attn_dropout_p)
+    
+    def forward(self, x, mask=None):
+        # Block #1 forward
+        res1 = x
+        x = self.ln1(x)
+        x = self.multi_head_attn(x, mask=mask)
+        x = self.drop1(x)
+        x += res1
+        
+        # Block #2 forward
+        res2 = x
+        x = self.ln2(x)
+        x = self.mlp(x)
+        x = self.drop2(x)
+        x += res2
         
         return x
-
-
-class ViTBlock(nn.Sequential):
-    def __init__(self, hidden_size=768, attn_dropout_p=0, forward_expansion=1, mlp_drop_p=0, **kwargs):
-        super(ViTBlock, self).__init__(        
-            ResBlock(
-                nn.Sequential(
-                    nn.LayerNorm(hidden_size),
-                    MultiHeadAttention(hidden_size, **kwargs),
-                    nn.Dropout(attn_dropout_p)
-                )
-            ),
-            ResBlock(
-                nn.Sequential(
-                    nn.LayerNorm(hidden_size),
-                    MLP(hidden_size, forward_expansion * hidden_size, dropout=mlp_drop_p),
-                    nn.Dropout(attn_dropout_p)
-                )
-            )
-        )
     
 
 class ViTEncoder(nn.Sequential):
     def __init__(self, depth=12, **kwargs):
-        super().__init__(*[ViTBlock(**kwargs) for _ in range(depth)])
+        super(ViTEncoder, self).__init__(*[ViTBlock(**kwargs) for _ in range(depth)])
+    
+    def forward(self, x, mask=None):
+        for module in self:
+            x = module(x, mask=mask)
+        
+        return x
 
 
 class ClassificationHead(nn.Module):

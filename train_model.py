@@ -7,8 +7,8 @@ import torch
 from torch import nn, optim
 from torch.nn import functional as F
 
-from dataset import ECGDataset
-from models import ECG_CNN, ViTClassifier
+from dataset import ECGDataset, RandomLengthECGDataset
+from models import ViTClassifier
 from plotting import plot_training_metrics, plot_confmat
 
 
@@ -22,8 +22,9 @@ def get_device(use_cuda):
     return device
 
 
-def make_dataloaders(label_column, batch_size):
-    train_dataset = ECGDataset('data_csvs/train.csv', label_column=label_column)
+def make_dataloaders(label_column, batch_size, patch_size):
+    train_dataset = RandomLengthECGDataset('data_csvs/train.csv', label_column=label_column, patch_size=patch_size)
+    # TODO Maybe make train and test use variable signal lengths?
     val_dataset = ECGDataset('data_csvs/val.csv', label_column=label_column)
     test_dataset = ECGDataset('data_csvs/test.csv', label_column=label_column)
     
@@ -67,12 +68,12 @@ def train_model(model, train_dataloader, val_dataloader, num_epochs, lr, momentu
         running_train_loss, running_train_acc, num_train_batches = 0, 0, 0
         pbar = tqdm(train_dataloader, desc=f'Epoch {ep + 1}')
         for i, data in enumerate(pbar):
-            inputs, labels = data
-            inputs, labels = inputs.to(device), labels.to(device)
+            inputs, labels, mask = data
+            inputs, labels, mask = inputs.to(device), labels.to(device), mask.to(device)
             
             optimizer.zero_grad()
             
-            outputs = model(inputs.float())
+            outputs = model(inputs.float(), mask=mask.bool())
             loss = loss_fn(outputs, labels)
             loss.backward()
             optimizer.step()
@@ -135,6 +136,11 @@ def main():
     parser = ArgumentParser(description='CNN Training Script')
     parser.add_argument('--label_column', dest='label_column', type=str, default='AFIB')
     parser.add_argument('--num_signals', dest='num_signals', type=int, default=12)
+    parser.add_argument('--patch_size', dest='patch_size', type=int, default=20)
+    parser.add_argument('--hidden_size', dest='hidden_size', type=int, default=256)
+    parser.add_argument('--seq_length', dest='seq_length', type=int, default=5000)
+    parser.add_argument('--encoder_depth', dest='encoder_depth', type=int, default=12)
+    parser.add_argument('--num_classes', dest='num_classes', type=int, default=2)
     parser.add_argument('--num_epochs', dest='num_epochs', type=int, default=5)
     parser.add_argument('--batch_size', dest='batch_size', type=int, default=32)
     parser.add_argument('--learning_rate', dest='lr', type=float, default=1e-3)
@@ -143,13 +149,13 @@ def main():
     args = parser.parse_args()
     
     # Set up model and dataloaders
-    train_dataloader, val_dataloader, test_dataloader = make_dataloaders(label_column=args.label_column, batch_size=args.batch_size)
-    model = build_model(args.num_signals,
-                        patch_size=20,
-                        hidden_size=768,
-                        seq_length=5000,
-                        depth=12,
-                        n_classes=2)
+    train_dataloader, val_dataloader, test_dataloader = make_dataloaders(label_column=args.label_column, batch_size=args.batch_size, patch_size=args.patch_size)
+    model = build_model(num_signals=args.num_signals,
+                        patch_size=args.patch_size,
+                        hidden_size=args.hidden_size,
+                        seq_length=args.seq_length,
+                        depth=args.encoder_depth,
+                        n_classes=args.num_classes)
     
     # Train the model
     history = train_model(model,
