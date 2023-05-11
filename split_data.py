@@ -36,7 +36,7 @@ def balanced_split(df, label_col, test_prop=0.2):
 
 def main():
     data_df = pd.read_csv('data_csvs/data.csv')
-    train_df, val_df, test_df = balanced_split(data_df, label_col='AFIB', test_prop=0.2)
+    train_df, val_df, test_df = balanced_split(data_df, label_col='SB', test_prop=0.2)
     train_df.to_csv('data_csvs/train.csv')
     val_df.to_csv('data_csvs/val.csv')
     test_df.to_csv('data_csvs/test.csv')

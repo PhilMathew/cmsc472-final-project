@@ -134,7 +134,7 @@ def test_model(model, test_dataloader, use_cuda):
 
 def main():
     parser = ArgumentParser(description='CNN Training Script')
-    parser.add_argument('--label_column', dest='label_column', type=str, default='AFIB')
+    parser.add_argument('--label_column', dest='label_column', type=str, default='SB')
     parser.add_argument('--num_signals', dest='num_signals', type=int, default=12)
     parser.add_argument('--patch_size', dest='patch_size', type=int, default=20)
     parser.add_argument('--hidden_size', dest='hidden_size', type=int, default=256)

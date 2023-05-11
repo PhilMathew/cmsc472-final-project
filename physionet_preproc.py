@@ -4,8 +4,8 @@ import wfdb
 from tqdm import tqdm
 
 
-def extract_data(dir_path, dx_of_interest):
-    sig_paths, dx_lists, dx_of_interest_labels = [], [], []
+def extract_data(dir_path, dx_map):
+    sig_paths, dx_labels = [], []
     for p in dir_path.iterdir():
         if p.suffix == '.hea':
             p_no_suffix = str(p)[:-(len('.hea'))]
@@ -14,26 +14,27 @@ def extract_data(dir_path, dx_of_interest):
             except Exception as e:
                 continue
             dx_list = ann['comments'][2][len('Dx: '):].split(',')
-            has_dx_of_interest = str(dx_of_interest) in dx_list
+            dx_label_map = [1 if str(v) in dx_list else 0 for v in dx_map.values()]
             
             sig_paths.append(Path(f'{p_no_suffix}.mat'))
-            dx_lists.append(dx_list)
-            dx_of_interest_labels.append(1 if has_dx_of_interest else 0)
+            dx_labels.append(dx_label_map)
             
-    return sig_paths, dx_lists, dx_of_interest_labels
+    return sig_paths, dx_labels
 
 
-def build_data_csv(root_dir, dx_of_interest, dx_of_interest_name):
-    df_dict = {'signal_file': [], 'dx': [], dx_of_interest_name: []}
+def build_data_csv(root_dir, dx_map):
+    dxs = list(dx_map.keys())
+    df_dict = {k:[] for k in ('signal_file', *dxs)}
     for p in root_dir.iterdir():
         if p.is_dir():
             dir_list = [d for d in p.iterdir() if d.suffix != '.html']
             for q in tqdm(dir_list, desc=f'Extracting from {p.name}'):
-                sig_paths, dx_lists, dx_of_interest_labels = extract_data(q, dx_of_interest)
+                sig_paths, dx_labels = extract_data(q, dx_map)
                 df_dict['signal_file'].extend(sig_paths)
-                df_dict['dx'].extend(dx_lists)
-                df_dict[dx_of_interest_name].extend(dx_of_interest_labels)
-
+                for label_list in dx_labels:
+                    for dx, label in zip(dxs, label_list):
+                        df_dict[dx].append(label)
+                        
     df = pd.DataFrame(df_dict)
     
     return df
@@ -42,11 +43,16 @@ def build_data_csv(root_dir, dx_of_interest, dx_of_interest_name):
 def main():
     data_root_dir = Path('/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/')
     wfdb_dir, dx_map_path = data_root_dir / 'WFDBRecords', data_root_dir / 'ConditionNames_SNOMED-CT.csv'
-    dx_map = pd.read_csv(dx_map_path)
-    dx_id = list(dx_map[dx_map['Acronym Name'] == 'AFIB']['Snomed_CT'])[0]
-    df = build_data_csv(wfdb_dir, dx_id, 'AFIB')
-    print(f"Num. with Dx: {len(df[df['AFIB'] == 1])}")
+    dx_map_df = pd.read_csv(dx_map_path)
+    dx_names, dx_ids = list(dx_map_df['Acronym Name']), list(dx_map_df['Snomed_CT'])
+    dx_map = {k: v for k, v in zip(dx_names, dx_ids)}
+    df = build_data_csv(wfdb_dir, dx_map)
+    
+    for dx in dx_names:
+        print(f'Num. with {dx}: {len(df[df[dx] == 1])}')
+    
     df.to_csv('data_csvs/data.csv', columns=df.columns, index=False)
+    
     
     
 if __name__ == '__main__':
