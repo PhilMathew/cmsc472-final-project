@@ -6,6 +6,14 @@ def balanced_split(df, label_col, test_prop=0.2):
     pos_df, neg_df = df[df[label_col] == 1], df[df[label_col] == 0] # assuming binary classes
     pos_inds, neg_inds = list(pos_df.index), list(neg_df.index)
     
+    # Restrict things so everything is balanced on the limiting class
+    if min(len(pos_inds), len(neg_inds)) == len(pos_inds):
+        random.shuffle(neg_inds)
+        neg_inds = neg_inds[:len(pos_inds)]
+    else:
+        random.shuffle(pos_inds)
+        pos_inds = pos_inds[:len(neg_inds)]
+    
     # Find limiting class and sample based on that
     num_samples = int(test_prop * min(len(pos_inds), len(neg_inds)))
     testval_pos_inds = random.sample(pos_inds, k=num_samples)
@@ -20,7 +28,7 @@ def balanced_split(df, label_col, test_prop=0.2):
     # Split into test and train
     test_df = df[df.index.isin(test_inds)]
     val_df = df[df.index.isin(val_inds)]
-    train_df = df[~df.index.isin(test_inds + val_inds)]   
+    train_df = df[(~df.index.isin(test_inds + val_inds)) & df.index.isin(neg_inds + pos_inds)]   
     
     return train_df, val_df, test_df
     
