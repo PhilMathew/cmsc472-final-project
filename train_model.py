@@ -50,7 +50,7 @@ def build_model(num_signals, patch_size, hidden_size, seq_length, depth, n_class
     return model    
 
 
-def train_model(model, train_dataloader, val_dataloader, num_epochs, lr, momentum, use_cuda, use_random_lengths):
+def train_model(model, train_dataloader, val_dataloader, num_epochs, lr, momentum, use_cuda, use_random_lengths, save_dir):
     device = get_device(use_cuda)
     if device.type == 'cuda':
         print('Training with CUDA-enabled device')
@@ -60,6 +60,7 @@ def train_model(model, train_dataloader, val_dataloader, num_epochs, lr, momentu
     model = model.to(device)
     
     # Create optimizer and loss function
+    # TODO: Try BCELoss
     loss_fn = nn.CrossEntropyLoss()
     if momentum:
         optimizer = optim.SGD(model.parameters(), lr=lr, momentum=momentum)
@@ -67,22 +68,23 @@ def train_model(model, train_dataloader, val_dataloader, num_epochs, lr, momentu
         optimizer = optim.Adam(model.parameters(), lr=lr)
     
     history = {k: [] for k in ('train_loss', 'train_acc', 'val_loss', 'val_acc')}
+    best_val_loss = np.inf
     for ep in range(num_epochs):
         # Training phase
         running_train_loss, running_train_acc, num_train_batches = 0, 0, 0
         pbar = tqdm(train_dataloader, desc=f'Epoch {ep + 1}')
         for i, data in enumerate(pbar):
+            optimizer.zero_grad()
+            
             if use_random_lengths:
                 inputs, labels, mask = data
                 inputs, labels, mask = inputs.to(device), labels.to(device), mask.to(device)
+                outputs = model(inputs.float(), mask=mask.bool())
             else:    
                 inputs, labels = data
                 inputs, labels = inputs.to(device), labels.to(device)
-            
-            optimizer.zero_grad()
-            
-            outputs = model(inputs.float())
-            # outputs = model(inputs.float(), mask=mask.bool())
+                outputs = model(inputs.float())
+                
             loss = loss_fn(outputs, labels)
             loss.backward()
             optimizer.step()
@@ -112,18 +114,25 @@ def train_model(model, train_dataloader, val_dataloader, num_epochs, lr, momentu
         history['train_acc'].append(running_train_acc / num_train_batches)
         history['val_loss'].append(running_val_loss / num_val_batches)
         history['val_acc'].append(running_val_acc / num_val_batches)
+        
+        if (running_val_loss / num_val_batches) < best_val_loss: # save best model
+            print('Saving new best model weights!')
+            torch.save(model.state_dict(), str(save_dir / 'best_model_weights.pth'))
+            best_val_loss = running_val_loss / num_val_batches
                 
-    return history    
+    return history, save_dir / 'best_model_weights.pth'    
 
 
-def test_model(model, test_dataloader, use_cuda, save_dir):
+def test_model(model, model_weights_path, test_dataloader, use_cuda, save_dir):
     device = get_device(use_cuda)
     if device.type == 'cuda':
         print('Testing with CUDA-enabled device')
     else:
         print('Testing on CPU')
     
+    
     model = model.to(device)
+    model.load_state_dict(torch.load(str(model_weights_path)))
     
     with torch.no_grad():
         pred_labels, gt_labels = [], []
@@ -159,7 +168,7 @@ def main():
     parser.add_argument('--num_classes', dest='num_classes', type=int, default=2, help='Number of classes to predict')
     parser.add_argument('--num_epochs', dest='num_epochs', type=int, default=5, help='Number of training epochs')
     parser.add_argument('--batch_size', dest='batch_size', type=int, default=16, help='Size of training, validation, and test batches')
-    parser.add_argument('--learning_rate', dest='lr', type=float, default=1e-3, help='Optimizier learning rate')
+    parser.add_argument('--learning_rate', dest='lr', type=float, default=1e-3, help='Optimizer learning rate')
     parser.add_argument('--momentum', dest='momentum', type=float, default=None, help='Momentum parameter for SGD (uses ADAM optimizer if None)')
     args = parser.parse_args()
     
@@ -187,26 +196,25 @@ def main():
                         n_classes=args.num_classes)
     
     # Train the model
-    history = train_model(model,
-                          train_dataloader,
-                          val_dataloader,
-                          num_epochs=args.num_epochs,
-                          lr=args.lr,
-                          momentum=args.momentum,
-                          use_cuda=args.use_cuda,
-                          use_random_lengths=args.randomize_training_lengths)
+    history, best_weights = train_model(model,
+                                        train_dataloader,
+                                        val_dataloader,
+                                        num_epochs=args.num_epochs,
+                                        lr=args.lr,
+                                        momentum=args.momentum,
+                                        use_cuda=args.use_cuda,
+                                        use_random_lengths=args.randomize_training_lengths,
+                                        save_dir=output_dir)
     
     # Plot the training metrics
     plot_training_metrics(history, save_path=str(output_dir / 'training_metrics.png'))
     
     # Evaluate on test set
-    test_model(model, 
+    test_model(model,
+               best_weights, 
                test_dataloader, 
                save_dir=output_dir,
                use_cuda=args.use_cuda)
-    
-    # Save model_state_dict
-    torch.save(model.state_dict(), str(output_dir / f'{args.label_column}_vit.pth'))
 
 
 if __name__ == '__main__':
