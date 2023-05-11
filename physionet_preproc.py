@@ -1,3 +1,5 @@
+from argparse import ArgumentParser
+
 from pathlib import Path
 import pandas as pd
 import wfdb
@@ -41,7 +43,17 @@ def build_data_csv(root_dir, dx_map):
 
 
 def main():
-    data_root_dir = Path('/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/')
+    parser = ArgumentParser(description='ECG Database Preprocessing Script')
+    parser.add_argument('--data_root_dir', dest='data_root_dir', help='Path to directory containing WFDBRecords folder and ConditionNames_SNOMED-CT.csv')
+    parser.add_argument('-o', '--output_dir', dest='output_dir', default='data_csvs', help='Path to directory to output CSV to')
+    args = parser.parse_args()
+    
+    data_root_dir = Path(args.data_root_dir)
+    
+    output_dir = Path(args.output_dir)
+    if not output_dir.exists():
+        output_dir.mkdir()
+    
     wfdb_dir, dx_map_path = data_root_dir / 'WFDBRecords', data_root_dir / 'ConditionNames_SNOMED-CT.csv'
     dx_map_df = pd.read_csv(dx_map_path)
     dx_names, dx_ids = list(dx_map_df['Acronym Name']), list(dx_map_df['Snomed_CT'])
@@ -51,7 +63,7 @@ def main():
     for dx in dx_names:
         print(f'Num. with {dx}: {len(df[df[dx] == 1])}')
     
-    df.to_csv('data_csvs/data.csv', columns=df.columns, index=False)
+    df.to_csv(str(output_dir / 'data.csv'), columns=df.columns, index=False)
     
     
     

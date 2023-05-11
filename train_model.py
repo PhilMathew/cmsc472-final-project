@@ -1,5 +1,6 @@
-from argparse import ArgumentParser, BooleanOptionalAction
+from argparse import ArgumentParser
 
+from pathlib import Path
 from tqdm import tqdm
 import numpy as np
 from torch.utils.data import DataLoader
@@ -22,11 +23,14 @@ def get_device(use_cuda):
     return device
 
 
-def make_dataloaders(label_column, batch_size, patch_size):
-    train_dataset = RandomLengthECGDataset('data_csvs/train.csv', label_column=label_column, patch_size=patch_size)
+def make_dataloaders(train_csv, val_csv, test_csv, label_column, batch_size, patch_size, randomize_training_lengths):
+    if randomize_training_lengths:
+        train_dataset = RandomLengthECGDataset(str(train_csv), label_column=label_column, patch_size=patch_size)
+    else:
+        train_dataset = ECGDataset(str(train_csv), label_column=label_column)
     # TODO Maybe make train and test use variable signal lengths?
-    val_dataset = ECGDataset('data_csvs/val.csv', label_column=label_column)
-    test_dataset = ECGDataset('data_csvs/test.csv', label_column=label_column)
+    val_dataset = ECGDataset(str(val_csv), label_column=label_column)
+    test_dataset = ECGDataset(str(test_csv), label_column=label_column)
     
     train_dataloader = DataLoader(train_dataset, batch_size=batch_size)
     val_dataloader = DataLoader(val_dataset, batch_size=batch_size)
@@ -46,7 +50,7 @@ def build_model(num_signals, patch_size, hidden_size, seq_length, depth, n_class
     return model    
 
 
-def train_model(model, train_dataloader, val_dataloader, num_epochs, lr, momentum, use_cuda):
+def train_model(model, train_dataloader, val_dataloader, num_epochs, lr, momentum, use_cuda, use_random_lengths):
     device = get_device(use_cuda)
     if device.type == 'cuda':
         print('Training with CUDA-enabled device')
@@ -68,12 +72,17 @@ def train_model(model, train_dataloader, val_dataloader, num_epochs, lr, momentu
         running_train_loss, running_train_acc, num_train_batches = 0, 0, 0
         pbar = tqdm(train_dataloader, desc=f'Epoch {ep + 1}')
         for i, data in enumerate(pbar):
-            inputs, labels, mask = data
-            inputs, labels, mask = inputs.to(device), labels.to(device), mask.to(device)
+            if use_random_lengths:
+                inputs, labels, mask = data
+                inputs, labels, mask = inputs.to(device), labels.to(device), mask.to(device)
+            else:    
+                inputs, labels = data
+                inputs, labels = inputs.to(device), labels.to(device)
             
             optimizer.zero_grad()
             
-            outputs = model(inputs.float(), mask=mask.bool())
+            outputs = model(inputs.float())
+            # outputs = model(inputs.float(), mask=mask.bool())
             loss = loss_fn(outputs, labels)
             loss.backward()
             optimizer.step()
@@ -107,7 +116,7 @@ def train_model(model, train_dataloader, val_dataloader, num_epochs, lr, momentu
     return history    
 
 
-def test_model(model, test_dataloader, use_cuda):
+def test_model(model, test_dataloader, use_cuda, save_dir):
     device = get_device(use_cuda)
     if device.type == 'cuda':
         print('Testing with CUDA-enabled device')
@@ -128,28 +137,48 @@ def test_model(model, test_dataloader, use_cuda):
             gt_labels.extend(labels.cpu().numpy())
     
     pred_labels, gt_labels = np.array(pred_labels), np.array(gt_labels)
-    print(f'Testing Accuracy: {100 * (np.sum(pred_labels == gt_labels) / gt_labels.shape[0])}%')
-    plot_confmat(gt_labels, pred_labels)
+    test_acc = 100 * (np.sum(pred_labels == gt_labels) / gt_labels.shape[0])
+    print(f'Testing Accuracy: {test_acc:.4f}%')
+    plot_confmat(gt_labels, pred_labels, title=f'Test Accuracy: {test_acc:.4f}%', save_path=str(save_dir / 'confmat.png'))
     
 
 def main():
-    parser = ArgumentParser(description='CNN Training Script')
-    parser.add_argument('--label_column', dest='label_column', type=str, default='SB')
-    parser.add_argument('--num_signals', dest='num_signals', type=int, default=12)
-    parser.add_argument('--patch_size', dest='patch_size', type=int, default=20)
-    parser.add_argument('--hidden_size', dest='hidden_size', type=int, default=256)
-    parser.add_argument('--seq_length', dest='seq_length', type=int, default=5000)
-    parser.add_argument('--encoder_depth', dest='encoder_depth', type=int, default=12)
-    parser.add_argument('--num_classes', dest='num_classes', type=int, default=2)
-    parser.add_argument('--num_epochs', dest='num_epochs', type=int, default=5)
-    parser.add_argument('--batch_size', dest='batch_size', type=int, default=16)
-    parser.add_argument('--learning_rate', dest='lr', type=float, default=1e-3)
-    parser.add_argument('--momentum', dest='momentum', type=float, default=None)
-    parser.add_argument('--use_cuda', dest='use_cuda', action='store_true', default=False)
+    parser = ArgumentParser(description='ViT Training Script')
+    parser.add_argument('--train_csv', dest='train_csv', help='Path to CSV with training data')
+    parser.add_argument('--val_csv', dest='val_csv', help='Path to CSV with validation data')
+    parser.add_argument('--test_csv', dest='test_csv', help='Path to CSV with testing data')
+    parser.add_argument('-o', '--output_dir', dest='output_dir', default='training_results', help='Path to directory to output training results to')
+    parser.add_argument('--randomize_training_signal_lengths', dest='randomize_training_lengths', action='store_true', default=False, help="Enables training with signals of varying length")
+    parser.add_argument('--use_cuda', dest='use_cuda', action='store_true', default=False, help='Enables CUDA usage for computations')
+    parser.add_argument('--dx_label', dest='label_column', type=str, default='SB', help='Diagnosis code for disease of interest in ConditionNames_SNOMED-CT.csv')
+    parser.add_argument('--num_signals', dest='num_signals', type=int, default=12, help='Number of signals in each .mat file')
+    parser.add_argument('--max_seq_length', dest='seq_length', type=int, default=5000, help='Maximum number of samples in each sequence')
+    parser.add_argument('--patch_size', dest='patch_size', type=int, default=20, help='Size of convolution patches used by the ViT')
+    parser.add_argument('--hidden_size', dest='hidden_size', type=int, default=256, help='Embedding dimension size for ViT')
+    parser.add_argument('--encoder_depth', dest='encoder_depth', type=int, default=12, help='Number of blocks in ViT encoder')
+    parser.add_argument('--num_classes', dest='num_classes', type=int, default=2, help='Number of classes to predict')
+    parser.add_argument('--num_epochs', dest='num_epochs', type=int, default=5, help='Number of training epochs')
+    parser.add_argument('--batch_size', dest='batch_size', type=int, default=16, help='Size of training, validation, and test batches')
+    parser.add_argument('--learning_rate', dest='lr', type=float, default=1e-3, help='Optimizier learning rate')
+    parser.add_argument('--momentum', dest='momentum', type=float, default=None, help='Momentum parameter for SGD (uses ADAM optimizer if None)')
     args = parser.parse_args()
     
+    # Make paths into pathlib objects
+    train_csv, val_csv, test_csv = Path(args.train_csv), Path(args.val_csv), Path(args.test_csv)
+    output_dir = Path(args.output_dir)
+    if not output_dir.exists():
+        output_dir.mkdir()
+    
     # Set up model and dataloaders
-    train_dataloader, val_dataloader, test_dataloader = make_dataloaders(label_column=args.label_column, batch_size=args.batch_size, patch_size=args.patch_size)
+    train_dataloader, val_dataloader, test_dataloader = make_dataloaders(train_csv=train_csv,
+                                                                         val_csv=val_csv,
+                                                                         test_csv=test_csv,
+                                                                         label_column=args.label_column, 
+                                                                         batch_size=args.batch_size, 
+                                                                         patch_size=args.patch_size,
+                                                                         randomize_training_lengths=args.randomize_training_lengths)
+    
+    # Create the model
     model = build_model(num_signals=args.num_signals,
                         patch_size=args.patch_size,
                         hidden_size=args.hidden_size,
@@ -164,14 +193,20 @@ def main():
                           num_epochs=args.num_epochs,
                           lr=args.lr,
                           momentum=args.momentum,
-                          use_cuda=args.use_cuda)
+                          use_cuda=args.use_cuda,
+                          use_random_lengths=args.randomize_training_lengths)
     
     # Plot the training metrics
-    plot_training_metrics(history)
+    plot_training_metrics(history, save_path=str(output_dir / 'training_metrics.png'))
     
     # Evaluate on test set
-    test_model(model, test_dataloader, use_cuda=args.use_cuda)
+    test_model(model, 
+               test_dataloader, 
+               save_dir=output_dir,
+               use_cuda=args.use_cuda)
     
+    # Save model_state_dict
+    torch.save(model.state_dict(), str(output_dir / f'{args.label_column}_vit.pth'))
 
 
 if __name__ == '__main__':

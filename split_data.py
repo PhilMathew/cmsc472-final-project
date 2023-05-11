@@ -1,5 +1,14 @@
-import pandas as pd
 import random
+from argparse import ArgumentParser
+
+from pathlib import Path
+import pandas as pd
+
+
+def shuffle_df(df):
+    df = df.sample(frac=1).reset_index(drop=True)
+    
+    return df
 
 
 def balanced_split(df, label_col, test_prop=0.2):
@@ -30,16 +39,32 @@ def balanced_split(df, label_col, test_prop=0.2):
     val_df = df[df.index.isin(val_inds)]
     train_df = df[(~df.index.isin(test_inds + val_inds)) & df.index.isin(neg_inds + pos_inds)]   
     
+    # Shuffle the dataframes
+    train_df = shuffle_df(train_df)
+    val_df = shuffle_df(val_df)
+    test_df = shuffle_df(test_df)
+    
     return train_df, val_df, test_df
     
 
 
 def main():
-    data_df = pd.read_csv('data_csvs/data.csv')
-    train_df, val_df, test_df = balanced_split(data_df, label_col='SB', test_prop=0.2)
-    train_df.to_csv('data_csvs/train.csv')
-    val_df.to_csv('data_csvs/val.csv')
-    test_df.to_csv('data_csvs/test.csv')
+    parser = ArgumentParser(description="Balanced Data Splitting Script")
+    parser.add_argument('--input_csv', dest='input_csv', help='Path to CSV containing dataset paths and labels')
+    parser.add_argument('--dx_type', dest='dx_type', default='SB', help='Diagnosis code for disease of interest in ConditionNames_SNOMED-CT.csv')
+    parser.add_argument('--test_prop', dest='test_prop', default=0.2, help='Proportion of data to split out as a test set')
+    parser.add_argument('-o', '--output_dir', dest='output_dir', default='data_csvs', help='Path to directory to output CSVs to')
+    args = parser.parse_args()
+    
+    output_dir = Path(args.output_dir)
+    if not output_dir.exists():
+        output_dir.mkdir()
+    
+    data_df = pd.read_csv(args.input_csv)
+    train_df, val_df, test_df = balanced_split(data_df, label_col=args.dx_type, test_prop=0.2)
+    train_df.to_csv(str(output_dir / 'train.csv'))
+    val_df.to_csv(str(output_dir / 'val.csv'))
+    test_df.to_csv(str(output_dir / 'test.csv'))
 
 
 if __name__ == '__main__':

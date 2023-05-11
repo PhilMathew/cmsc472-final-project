@@ -22,7 +22,7 @@ def plot_training_metrics(history, save_path='train_metrics.png'):
     fig.savefig(str(save_path))
 
 
-def plot_confmat(true_labels, pred_labels, save_path='confmat.png'):
+def plot_confmat(true_labels, pred_labels, save_path='confmat.png', title=''):
     """
     Plots a confusion matrix from given data
     """
@@ -40,6 +40,6 @@ def plot_confmat(true_labels, pred_labels, save_path='confmat.png'):
 
     ax = sns.heatmap(cm_norm, annot=annot, fmt='', cbar=True, cmap=plt.cm.magma, vmin=0, ax=ax) # plot the confusion matrix
 
-    ax.set(xlabel='Predicted Label', ylabel='Actual Label')
+    ax.set(xlabel='Predicted Label', ylabel='Actual Label', title=title)
     fig.savefig(str(save_path))
     
