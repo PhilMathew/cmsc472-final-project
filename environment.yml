@@ -1,0 +1,19 @@
+name: cmsc472
+channels:
+  - defaults
+dependencies:
+  - python
+  - torchvision
+  - pytorch
+  - pytorch-cuda=11.7
+  - torchaudio
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - transformers
+  - pip:
+    - wfdb
+    - tqdm
+prefix: /home/phil/anaconda3/envs/cmsc472
