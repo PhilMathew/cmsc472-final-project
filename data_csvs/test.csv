@@ -1,0 +1,357 @@
+,signal_file,dx,AFIB
+40,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/14/143/JS13764.mat,"['6374002', '59931005', '164917005', '164934002', '164890007']",0
+88,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/14/143/JS13717.mat,"['164934002', '164890007', '6374002', '59931005']",0
+210,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/14/142/JS13692.mat,"['445118002', '6374002', '164890007', '55930002', '427172004']",0
+402,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/14/144/JS13842.mat,"['164890007', '164934002', '39732003', '59931005']",0
+593,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/14/149/JS14396.mat,"['164890007', '164934002', '10370003']",0
+721,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/14/141/JS13530.mat,"['164934002', '164890007', '61721007', '55827005']",0
+763,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/14/141/JS13547.mat,"['164890007', '61721007', '429622005', '55930002']",0
+1054,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/15/150/JS14485.mat,"['55827005', '429622005', '164934002', '164890007', '55930002', '10370003']",0
+1325,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/15/157/JS15126.mat,"['164890007', '164934002']",0
+1404,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/15/159/JS15372.mat,"['164890007', '429622005', '55930002', '59931005']",0
+2287,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/41/415/JS40927.mat,['426783006'],0
+2321,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/41/418/JS41289.mat,['426783006'],0
+2502,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/41/414/JS40879.mat,['426783006'],0
+2593,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/41/414/JS40887.mat,['426783006'],0
+2907,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/41/416/JS41099.mat,['426783006'],0
+3017,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/015/JS00590.mat,"['164889003', '428750005']",1
+3042,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/015/JS00618.mat,"['164889003', '47665007', '164934002']",1
+3156,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/018/JS00938.mat,['164889003'],1
+3162,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/018/JS00911.mat,['427084000'],0
+3219,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/019/JS01020.mat,"['164889003', '17338001']",1
+3235,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/019/JS00977.mat,"['164889003', '39732003', '17338001']",1
+3273,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/019/JS01013.mat,"['164889003', '164934002']",1
+3285,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/019/JS00976.mat,['426177001'],0
+3321,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/017/JS00777.mat,"['164889003', '164934002']",1
+3333,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/017/JS00784.mat,"['164889003', '164934002']",1
+3348,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/017/JS00763.mat,['164889003'],1
+3380,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/017/JS00785.mat,['164889003'],1
+3401,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/014/JS00414.mat,"['164889003', '39732003']",1
+3525,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/010/JS00078.mat,"['164865005', '164889003', '698252002']",1
+3526,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/010/JS00050.mat,['164889003'],1
+3553,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/010/JS00045.mat,"['427084000', '251146004']",0
+3615,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/011/JS00202.mat,['164889003'],1
+3641,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/011/JS00105.mat,['164889003'],1
+3646,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/011/JS00195.mat,"['164889003', '164934002']",1
+3715,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/013/JS00382.mat,"['427084000', '55827005']",0
+3718,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/013/JS00318.mat,['164889003'],1
+3760,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/013/JS00384.mat,"['426783006', '270492004', '59118001']",0
+3761,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/013/JS00383.mat,"['164889003', '59118001', '428750005']",1
+3782,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/013/JS00322.mat,"['164889003', '59118001', '428750005']",1
+3799,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/016/JS00649.mat,['164889003'],1
+3871,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/016/JS00687.mat,['426177001'],0
+3947,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/012/JS00249.mat,"['164889003', '164934002']",1
+3982,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/01/012/JS00250.mat,"['164889003', '55827005']",1
+4716,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/21/211/JS20555.mat,"['284470004', '426177001']",0
+4839,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/21/217/JS21118.mat,"['713422000', '426177001']",0
+4947,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/21/218/JS21285.mat,"['446358003', '47665007', '427084000', '61721007']",0
+5115,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/12/129/JS12352.mat,"['270492004', '427084000']",0
+5233,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/12/123/JS11716.mat,"['713427006', '270492004', '427084000']",0
+5293,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/12/123/JS11721.mat,"['270492004', '61721007', '427084000', '39732003']",0
+5566,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/12/121/JS11550.mat,"['284470004', '270492004', '426995002', '427084000', '164934002', '713422000']",0
+5999,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/02/022/JS01279.mat,"['427084000', '284470004']",0
+6249,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/02/029/JS01986.mat,['164889003'],1
+6314,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/02/028/JS01942.mat,"['164889003', '429622005', '428750005', '59931005']",1
+6345,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/02/028/JS01964.mat,['164889003'],1
+6520,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/02/025/JS01569.mat,"['164889003', '164934002']",1
+6664,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/02/026/JS01769.mat,"['164889003', '55827005', '429622005', '164934002']",1
+6668,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/02/026/JS01671.mat,"['164889003', '39732003']",1
+6701,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/02/023/JS01383.mat,['164889003'],1
+6702,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/02/023/JS01456.mat,"['164889003', '55827005']",1
+6726,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/02/023/JS01403.mat,"['164889003', '55827005', '164934002']",1
+6752,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/02/023/JS01457.mat,['164889003'],1
+6789,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/02/023/JS01380.mat,['164889003'],1
+6808,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/02/021/JS01217.mat,['164889003'],1
+6809,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/02/021/JS01221.mat,"['164889003', '698252002', '59931005']",1
+6882,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/02/021/JS01249.mat,"['427084000', '164912004']",0
+6910,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/02/020/JS01131.mat,['164889003'],1
+7133,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/24/246/JS24026.mat,"['47665007', '427084000']",0
+7158,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/24/246/JS24070.mat,"['47665007', '427084000']",0
+7170,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/24/246/JS24083.mat,"['47665007', '427084000', '59931005']",0
+7785,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/24/249/JS24370.mat,"['426177001', '427393009']",0
+7931,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/24/245/JS23941.mat,"['164930006', '251223006', '47665007', '251146004', '59931005', '164917005', '426177001', '164934002']",0
+8037,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/42/422/JS41605.mat,['427084000'],0
+8116,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/42/423/JS41728.mat,['427084000'],0
+8140,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/42/423/JS41737.mat,"['427084000', '55930002']",0
+8193,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/42/423/JS41719.mat,['427084000'],0
+8227,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/42/427/JS42195.mat,['427084000'],0
+8279,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/42/427/JS42187.mat,"['427084000', '429622005', '55930002']",0
+8306,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/42/424/JS41817.mat,"['164934002', '427084000']",0
+9182,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/37/375/JS36935.mat,['426783006'],0
+9290,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/37/373/JS36763.mat,['426783006'],0
+9294,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/37/373/JS36730.mat,['426783006'],0
+9467,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/37/371/JS36512.mat,['426783006'],0
+9632,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/37/370/JS36465.mat,['426783006'],0
+9757,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/37/377/JS37160.mat,['426783006'],0
+10016,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/035/JS02695.mat,"['164889003', '164909002', '59118001', '164934002']",1
+10030,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/035/JS02614.mat,"['164889003', '55827005']",1
+10100,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/034/JS02507.mat,"['164889003', '164934002']",1
+10114,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/034/JS02527.mat,"['426177001', '164934002', '17338001']",0
+10151,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/034/JS02516.mat,"['164889003', '47665007', '251198002']",1
+10199,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/031/JS02196.mat,"['427084000', '251198002', '164912004', '67751000119106']",0
+10255,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/031/JS02269.mat,"['164889003', '164934002']",1
+10327,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/039/JS03092.mat,"['164889003', '111975006', '428750005']",1
+10341,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/039/JS03050.mat,['164889003'],1
+10362,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/039/JS03090.mat,"['164889003', '428750005']",1
+10381,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/039/JS03094.mat,"['164889003', '59118001', '429622005', '428750005', '59931005', '17338001']",1
+10411,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/032/JS02294.mat,"['164889003', '55827005', '428750005']",1
+10412,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/032/JS02327.mat,['426783006'],0
+10440,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/032/JS02383.mat,['426783006'],0
+10673,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/036/JS02746.mat,"['164889003', '47665007', '59118001']",1
+10818,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/037/JS02904.mat,['164889003'],1
+10831,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/037/JS02846.mat,['164889003'],1
+10885,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/037/JS02879.mat,['164889003'],1
+10956,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/038/JS02985.mat,"['164889003', '428750005', '17338001']",1
+10969,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/038/JS03003.mat,"['164889003', '251146004', '164934002']",1
+10981,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/03/038/JS02930.mat,['164889003'],1
+11700,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/20/200/JS19454.mat,"['164934002', '164890007']",0
+11783,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/20/200/JS19409.mat,"['164934002', '164890007']",0
+11981,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/20/206/JS20090.mat,"['284470004', '427084000', '251170000']",0
+12029,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/29/296/JS29072.mat,['426177001'],0
+12034,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/29/296/JS29039.mat,"['426177001', '164934002']",0
+12268,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/29/295/JS28953.mat,"['426177001', '55827005']",0
+12389,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/29/298/JS29250.mat,['426177001'],0
+12624,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/29/291/JS28519.mat,['426177001'],0
+12678,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/29/291/JS28522.mat,['426177001'],0
+12764,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/29/290/JS28470.mat,['426177001'],0
+13177,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/19/190/JS18436.mat,"['164890007', '164934002']",0
+13220,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/19/193/JS18762.mat,"['61721007', '55930002', '164890007', '427172004']",0
+13302,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/19/198/JS19249.mat,"['164934002', '164890007']",0
+13386,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/19/198/JS19277.mat,"['164934002', '164890007']",0
+13460,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/19/192/JS18672.mat,"['713427006', '426761007', '164890007']",0
+14342,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/39/394/JS38817.mat,"['426783006', '164934002']",0
+14753,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/39/392/JS38606.mat,['426783006'],0
+14940,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/39/396/JS39090.mat,"['426783006', '164934002']",0
+15119,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/23/238/JS23298.mat,"['81898007', '10370003']",0
+15463,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/23/230/JS22480.mat,"['427084000', '55827005', '59931005', '429622005', '39732003', '55930002', '427172004']",0
+15930,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/23/232/JS22606.mat,"['426177001', '39732003']",0
+16038,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/073/JS06603.mat,['164889003'],1
+16061,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/073/JS06581.mat,"['164889003', '698252002', '251146004', '164934002']",1
+16172,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/071/JS06379.mat,"['164889003', '17338001']",1
+16182,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/071/JS06448.mat,"['426177001', '251198002', '164909002']",0
+16197,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/071/JS06464.mat,['164889003'],1
+16228,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/075/JS06834.mat,['164889003'],1
+16343,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/079/JS07286.mat,"['164889003', '428750005']",1
+16379,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/079/JS07232.mat,"['164889003', '47665007', '251198002']",1
+16420,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/077/JS07012.mat,['164889003'],1
+16474,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/077/JS07099.mat,['164889003'],1
+16481,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/077/JS07009.mat,"['164889003', '55827005', '164934002']",1
+16521,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/072/JS06499.mat,"['164889003', '429622005', '428750005', '164934002']",1
+16548,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/072/JS06544.mat,"['164889003', '59118001', '428750005']",1
+16642,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/074/JS06691.mat,"['164889003', '164934002']",1
+16643,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/074/JS06727.mat,"['164889003', '428750005']",1
+16714,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/076/JS06981.mat,['426783006'],0
+16719,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/076/JS06990.mat,"['164889003', '111975006', '429622005', '428750005', '164934002']",1
+16734,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/076/JS06954.mat,"['164889003', '429622005', '428750005', '59931005']",1
+16736,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/076/JS06953.mat,['164889003'],1
+16748,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/076/JS06930.mat,['426177001'],0
+16760,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/076/JS06908.mat,"['427084000', '428750005']",0
+16842,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/070/JS06287.mat,"['164889003', '164917005', '164934002']",1
+16876,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/07/070/JS06286.mat,"['164889003', '428750005', '17338001']",1
+17363,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/25/251/JS24576.mat,"['426177001', '164934002', '427393009']",0
+18518,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/36/364/JS35873.mat,['427393009'],0
+18651,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/36/360/JS35439.mat,"['55930002', '429622005', '427393009', '59931005']",0
+18801,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/36/366/JS36040.mat,['427393009'],0
+19016,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/051/JS04322.mat,"['164889003', '164917005', '17338001']",1
+19029,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/051/JS04347.mat,"['164889003', '55827005']",1
+19115,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/058/JS05033.mat,"['164889003', '55827005', '428750005']",1
+19135,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/058/JS05100.mat,"['164889003', '164909002', '428750005', '164934002', '17338001']",1
+19161,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/058/JS05068.mat,"['164889003', '429622005', '428750005', '59931005']",1
+19171,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/058/JS05037.mat,"['164889003', '55827005', '164934002']",1
+19219,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/053/JS04543.mat,['164889003'],1
+19251,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/053/JS04506.mat,"['164889003', '251199005', '698252002', '164934002', '17338001']",1
+19356,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/056/JS04829.mat,['426177001'],0
+19397,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/056/JS04892.mat,"['164889003', '164934002']",1
+19402,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/052/JS04414.mat,"['164889003', '55827005', '429622005', '428750005', '164934002']",1
+19452,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/052/JS04469.mat,"['164889003', '55827005', '428750005', '17338001']",1
+19467,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/052/JS04459.mat,"['164889003', '55827005', '429622005', '428750005', '164934002']",1
+19489,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/052/JS04430.mat,"['164889003', '55827005']",1
+19519,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/050/JS04238.mat,['426177001'],0
+19591,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/050/JS04193.mat,"['164889003', '55827005']",1
+19601,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/054/JS04675.mat,"['164889003', '428750005']",1
+19659,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/054/JS04685.mat,"['164889003', '55827005', '164934002']",1
+19763,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/059/JS05159.mat,['427084000'],0
+19792,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/059/JS05202.mat,"['164889003', '251146004', '428750005']",1
+19811,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/057/JS04971.mat,"['164889003', '55827005', '428750005']",1
+19870,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/057/JS04994.mat,"['164889003', '39732003', '164934002']",1
+19874,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/057/JS04979.mat,"['164889003', '251199005', '55827005', '428750005']",1
+19891,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/05/057/JS05000.mat,['426177001'],0
+20111,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/11/116/JS11089.mat,['426783006'],0
+20298,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/11/115/JS10911.mat,['426177001'],0
+20466,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/11/117/JS11107.mat,['426783006'],0
+21026,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/31/314/JS30813.mat,['426177001'],0
+21165,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/31/318/JS31281.mat,['426177001'],0
+21325,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/31/317/JS31179.mat,"['426177001', '164934002', '59931005']",0
+21505,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/31/310/JS30449.mat,['426177001'],0
+21848,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/31/319/JS31303.mat,['426177001'],0
+21963,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/31/311/JS30538.mat,['426177001'],0
+22754,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/27/278/JS27239.mat,['426177001'],0
+22987,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/27/270/JS26482.mat,['426177001'],0
+23036,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/040/JS03147.mat,['164889003'],1
+23051,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/040/JS03143.mat,"['164889003', '164934002']",1
+23178,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/041/JS03325.mat,['164889003'],1
+23202,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/042/JS03392.mat,['427084000'],0
+23203,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/042/JS03437.mat,"['164889003', '251198002', '164931005', '164934002']",1
+23249,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/042/JS03432.mat,"['427084000', '284470004']",0
+23264,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/042/JS03359.mat,"['164889003', '55827005', '428750005']",1
+23353,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/049/JS04086.mat,"['164889003', '251198002', '59118001', '429622005', '428750005']",1
+23381,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/049/JS04154.mat,"['164889003', '55827005', '429622005', '428750005', '164934002']",1
+23442,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/048/JS04077.mat,"['164889003', '39732003', '55827005']",1
+23484,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/048/JS04033.mat,['426177001'],0
+23535,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/044/JS03564.mat,"['164889003', '47665007']",1
+23561,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/044/JS03563.mat,"['164889003', '428750005']",1
+23590,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/044/JS03639.mat,"['164889003', '164934002']",1
+23592,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/044/JS03612.mat,"['164889003', '39732003', '698252002']",1
+23636,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/047/JS03950.mat,['164889003'],1
+23670,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/047/JS03890.mat,['426783006'],0
+23698,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/045/JS03689.mat,"['164889003', '55827005', '428750005']",1
+23721,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/045/JS03766.mat,"['164889003', '17338001']",1
+23725,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/045/JS03694.mat,"['426177001', '164934002']",0
+23744,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/045/JS03669.mat,['426783006'],0
+23774,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/045/JS03729.mat,['164889003'],1
+23781,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/045/JS03742.mat,"['164889003', '698252002']",1
+23798,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/046/JS03856.mat,"['164889003', '428750005']",1
+23818,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/046/JS03854.mat,"['164889003', '55827005']",1
+23888,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/046/JS03820.mat,['426783006'],0
+23893,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/046/JS03836.mat,"['164889003', '164934002']",1
+23979,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/043/JS03475.mat,"['164889003', '164934002']",1
+23995,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/04/043/JS03508.mat,"['164889003', '164917005', '428750005']",1
+24015,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/086/JS08021.mat,"['164889003', '55827005', '428750005']",1
+24019,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/086/JS07951.mat,"['164889003', '698252002', '55827005', '17338001']",1
+24021,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/086/JS08018.mat,['164889003'],1
+24054,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/086/JS07992.mat,"['164889003', '59118001', '428750005']",1
+24085,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/086/JS07943.mat,"['164889003', '251199005', '698252002', '429622005', '428750005', '164934002']",1
+24096,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/086/JS07948.mat,"['164889003', '428750005']",1
+24097,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/086/JS07997.mat,"['164889003', '59118001']",1
+24179,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/082/JS07562.mat,"['164889003', '164934002']",1
+24201,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/088/JS08239.mat,"['164889003', '251198002', '698252002', '164909002', '75532003']",1
+24243,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/088/JS08214.mat,"['164889003', '55827005', '428750005']",1
+24276,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/088/JS08236.mat,['164889003'],1
+24357,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/083/JS07632.mat,['426177001'],0
+24376,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/083/JS07626.mat,"['164889003', '251199005', '164934002']",1
+24407,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/084/JS07759.mat,"['164889003', '39732003', '164917005', '698252002', '428750005']",1
+24429,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/084/JS07810.mat,['164889003'],1
+24529,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/087/JS08092.mat,"['427084000', '39732003', '164912004', '164934002']",0
+24663,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/080/JS07402.mat,['164889003'],1
+24737,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/089/JS08321.mat,['164889003'],1
+24755,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/089/JS08245.mat,"['164889003', '55827005', '428750005']",1
+24776,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/089/JS08278.mat,['164889003'],1
+24807,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/085/JS07902.mat,"['164889003', '39732003', '164909002']",1
+24810,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/085/JS07876.mat,"['426783006', '164934002']",0
+24852,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/085/JS07850.mat,['427084000'],0
+24863,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/085/JS07834.mat,"['164889003', '164934002']",1
+24955,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/08/081/JS07469.mat,"['427084000', '55827005']",0
+25433,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/38/386/JS38080.mat,['426783006'],0
+25865,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/38/387/JS38162.mat,['426783006'],0
+25956,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/38/380/JS37462.mat,"['426783006', '164934002']",0
+25957,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/38/380/JS37478.mat,['426783006'],0
+26043,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/13/139/JS13381.mat,"['164890007', '713427006']",0
+26155,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/13/130/JS12418.mat,"['426995002', '54016002', '106068003', '251170000']",0
+26185,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/13/130/JS12484.mat,"['55930002', '164890007', '55827005', '27885002']",0
+26243,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/13/135/JS12911.mat,"['29320008', '59931005', '164934002', '39732003', '27885002', '164890007', '713426002']",0
+26278,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/13/135/JS12914.mat,"['164890007', '27885002', '55930002', '29320008']",0
+26869,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/13/131/JS12521.mat,"['81898007', '427084000', '27885002']",0
+26896,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/13/131/JS12544.mat,"['698252002', '164890007', '713426002', '164934002']",0
+27112,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/46/460/JS45458.mat,['164896001'],0
+27401,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/26/263/JS25736.mat,['426177001'],0
+28112,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/26/260/JS25482.mat,['426177001'],0
+28250,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/10/107/JS10142.mat,['426761007'],0
+28277,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/10/107/JS10134.mat,"['713422000', '54016002']",0
+28367,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/10/101/JS09494.mat,"['426177001', '284470004']",0
+28569,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/10/103/JS09757.mat,"['164890007', '55827005', '59118001']",0
+28665,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/10/100/JS09393.mat,['164889003'],1
+28682,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/10/100/JS09472.mat,"['164889003', '698252002', '55827005', '428750005']",1
+28702,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/10/100/JS09405.mat,"['164889003', '429622005', '428750005', '164934002']",1
+28716,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/10/100/JS09412.mat,"['164890007', '164934002']",0
+28717,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/10/100/JS09388.mat,"['164889003', '428750005']",1
+28796,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/10/102/JS09591.mat,['164889003'],1
+28819,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/10/102/JS09675.mat,"['164889003', '429622005', '428750005', '164934002']",1
+28850,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/10/104/JS09881.mat,"['164889003', '428750005']",1
+28877,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/10/104/JS09839.mat,"['164889003', '429622005', '428750005', '59931005']",1
+28892,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/10/104/JS09897.mat,"['164889003', '251146004', '59118001']",1
+29044,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/10/108/JS10265.mat,['426761007'],0
+29472,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/16/166/JS16099.mat,"['164890007', '55827005', '55930002']",0
+30195,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/28/284/JS27884.mat,"['426177001', '164873001', '59931005']",0
+30417,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/28/283/JS27712.mat,['426177001'],0
+30441,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/28/283/JS27788.mat,['426177001'],0
+31288,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/34/344/JS33872.mat,"['426177001', '55827005']",0
+31457,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/34/345/JS33972.mat,['426177001'],0
+32169,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/43/437/JS43152.mat,['427084000'],0
+32203,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/43/437/JS43156.mat,['427084000'],0
+32834,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/43/432/JS42692.mat,"['427084000', '251146004', '55930002']",0
+33983,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/40/401/JS39527.mat,['426783006'],0
+34092,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/40/404/JS39840.mat,['426783006'],0
+34177,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/09/091/JS08463.mat,['426177001'],0
+34184,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/09/091/JS08546.mat,['164889003'],1
+34228,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/09/091/JS08502.mat,"['164889003', '164934002']",1
+34254,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/09/098/JS09202.mat,['426177001'],0
+34289,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/09/098/JS09225.mat,"['164890007', '55827005', '428750005']",0
+34344,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/09/098/JS09211.mat,"['164889003', '55827005', '164934002']",1
+34358,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/09/092/JS08606.mat,"['164889003', '251199005', '698252002', '17338001']",1
+34365,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/09/092/JS08569.mat,"['164889003', '164931005']",1
+34426,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/09/092/JS08601.mat,"['164889003', '428750005', '164934002']",1
+34448,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/09/092/JS08577.mat,['164889003'],1
+34488,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/09/095/JS08898.mat,"['164889003', '55827005', '428750005', '17338001']",1
+34678,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/09/093/JS08703.mat,"['164889003', '55827005', '429622005', '428750005', '17338001']",1
+34754,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/09/097/JS09153.mat,"['427084000', '164917005', '59118001', '428750005']",0
+34831,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/09/097/JS09138.mat,"['164889003', '164934002']",1
+34861,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/09/094/JS08769.mat,"['164889003', '251146004', '164934002']",1
+34957,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/09/096/JS08964.mat,"['164889003', '251146004', '429622005', '428750005']",1
+35050,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/09/099/JS09358.mat,"['164889003', '429622005', '428750005', '164934002']",1
+35057,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/09/099/JS09319.mat,"['426177001', '55827005']",0
+35089,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/09/099/JS09324.mat,"['164889003', '164934002', '17338001']",1
+35123,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/09/099/JS09352.mat,['164889003'],1
+35124,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/09/099/JS09323.mat,"['164889003', '428750005']",1
+35841,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/44/447/JS44155.mat,"['427084000', '251146004']",0
+36112,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/44/440/JS43488.mat,['427084000'],0
+36924,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/30/300/JS29446.mat,['426177001'],0
+37061,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/30/308/JS30287.mat,"['426177001', '164934002']",0
+37214,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/068/JS06107.mat,"['427084000', '284470004', '164934002']",0
+37256,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/062/JS05540.mat,"['164889003', '55827005']",1
+37260,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/062/JS05505.mat,['164889003'],1
+37334,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/062/JS05452.mat,"['164889003', '698252002', '164934002']",1
+37359,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/063/JS05553.mat,['426783006'],0
+37387,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/063/JS05582.mat,"['164889003', '164934002']",1
+37573,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/061/JS05362.mat,['164889003'],1
+37583,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/061/JS05358.mat,"['164889003', '164917005', '698252002', '164934002']",1
+37587,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/061/JS05434.mat,"['164889003', '55827005']",1
+37616,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/061/JS05361.mat,"['164889003', '698252002']",1
+37617,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/061/JS05345.mat,"['164889003', '698252002', '164934002']",1
+37620,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/061/JS05371.mat,"['164889003', '698252002', '164934002']",1
+37666,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/069/JS06249.mat,['426177001'],0
+37709,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/069/JS06175.mat,['426177001'],0
+37724,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/069/JS06227.mat,"['164889003', '47665007']",1
+37725,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/069/JS06182.mat,"['164889003', '698252002']",1
+37735,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/069/JS06257.mat,['164889003'],1
+37759,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/066/JS05885.mat,"['164889003', '47665007', '164934002']",1
+37928,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/064/JS05668.mat,['426177001'],0
+37943,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/064/JS05700.mat,"['164889003', '164909002']",1
+37946,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/064/JS05669.mat,['426783006'],0
+37963,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/067/JS05953.mat,"['164889003', '39732003']",1
+38011,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/067/JS06053.mat,"['164889003', '698252002', '164934002']",1
+38034,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/067/JS05987.mat,"['164889003', '698252002', '428750005']",1
+38120,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/06/060/JS05296.mat,"['164889003', '59118001', '428750005']",1
+38253,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/33/334/JS32869.mat,['426177001'],0
+38699,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/33/335/JS32941.mat,['426177001'],0
+38703,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/33/335/JS32973.mat,['426177001'],0
+38828,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/33/332/JS32606.mat,['426177001'],0
+39576,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/22/223/JS21772.mat,"['713427006', '164934002', '427084000']",0
+40223,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/32/324/JS31886.mat,['426177001'],0
+40467,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/32/326/JS32068.mat,"['426177001', '164934002', '59931005']",0
+40564,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/32/320/JS31419.mat,"['426177001', '251146004']",0
+40579,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/32/320/JS31497.mat,['426177001'],0
+40844,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/32/323/JS31783.mat,"['426177001', '55827005']",0
+40960,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/32/328/JS32247.mat,"['426177001', '164934002']",0
+40994,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/32/328/JS32220.mat,['426177001'],0
+41018,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/32/328/JS32290.mat,['426177001'],0
+41369,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/35/354/JS34873.mat,['427393009'],0
+41524,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/35/353/JS34792.mat,['427393009'],0
+41560,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/35/350/JS34459.mat,['426177001'],0
+42027,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/35/356/JS35092.mat,"['164934002', '427393009']",0
+42060,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/35/352/JS34655.mat,"['426783006', '164934002', '427393009', '59931005']",0
+42332,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/18/180/JS17405.mat,"['164890007', '251146004']",0
+43512,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/17/178/JS17229.mat,['164890007'],0
+43845,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/17/175/JS16987.mat,['164890007'],0
+44075,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/17/177/JS17173.mat,['164890007'],0
+44449,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/45/454/JS44833.mat,"['427084000', '55827005', '55930002']",0
+44503,/home/phil/Documents/vscode-projects/UMD/cmsc472-final-project/physionet/files/ecg-arrhythmia/1.0.0/WFDBRecords/45/451/JS44526.mat,"['63593006', '427084000']",0
